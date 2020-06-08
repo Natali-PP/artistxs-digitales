@@ -1,20 +1,20 @@
-
+  //paleta de colores
 const colors = ['#ff6700', "#f3da00", "#00e6ea", "#ff0056", "#ff00cd", "#9b0074", "#9a00ff", "#f1f6fb", "#5573a5", "#190027", "#ffd319", "#8c1eff", "#fffb96", "#b967ff", "#05ffa1", "#b39cf3", "#ff0041"];
 
+//colocar dentro de draw para cosas lokas
+let divisiones = Math.random();
+let angulo = 360 / divisiones;
 function setup() {
   const canv =  createCanvas(windowWidth, windowHeight);
   canv.style('display', 'flex');
   background(13,2,33);
   strokeWeight(4);
   angleMode(DEGREES);
-  //paleta de colores
   
 }
 
 function draw() {
   /* console.log(mouseY); */
-  let divisiones = Math.random();
-  let angulo = 360 / divisiones;
   for (let i = 0; i < colors.length; i++) {
     let rectY=20;
     fill(colors[i]);
@@ -38,7 +38,7 @@ function draw() {
     }
 
     if (mouseIsPressed==true && mouseX <= 40 && mouseX >=20) {
-      console.log("SI")
+      /* console.log("ACAAA") */
       switch (true) {
         case (mouseY>=20 && mouseY <=40 ):
           console.log("COLORRR")
